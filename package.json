@@ -1,0 +1,16 @@
+{
+  "name": "789",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "mongodb": "^3.3.5",
+    "node-fetch": "^2.6.0",
+    "query-string": "^6.9.0"
+  }
+}

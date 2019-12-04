@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="template.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="landing-page">
+        <% if (beers.length == 0) { %>
+        <p class="landing-page__nothing-found-title">Nothing found</p>
+        <% } %>
+
+        <div class=landing-page__items-container>
+            <% for (const item of beers) { %>
+            <div class="template">
+                <img src=<%= item.image %> class="template__image" alt="beer" />
+                <div class="template__lower-container">
+                    <p class="template__name"><%= item.name %></p>
+                    <p class="template__description"><%= item.tagline %></p>
+                </div>
+            </div>
+            <% } %>
+        </div>
+    </div>
+</body>
+
+</html>
